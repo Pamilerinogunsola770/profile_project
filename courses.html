@@ -2,23 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Courses - Pamilerin</title>
+    <title>Academic Registration | Portfolio Modules</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <a href="profile.html">Home/Profile</a>
-        <a href="courses.html">Courses</a>
+        <div class="nav-container">
+            <a href="profile.html" class="nav-brand">Victor<span>.dev</span></a>
+            <div class="nav-links">
+                <a href="profile.html">Home</a>
+                <a href="courses.html" class="active">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+        </div>
     </nav>
     
-    <h2>Current Courses</h2>
-    <ul>
-        <li><strong>CSC 301</strong> - Application of Development Tools</li>
-        <li><strong>CSC 313</strong> - Data Structures and Algorithms</li>
-        <li><strong>CSC 335</strong> - System Analysis and Design</li>
-        <li><strong>MAT 352</strong> - Mathematical Methods</li>
-        <li><strong>GES 103</strong> - Nigerian Peoples and Culture</li>
-        <li><strong>GES 301</strong> - Entrepreneurial Skills</li>
-    </ul>
+    <div class="container">
+        <h2>Current Registration Focus</h2>
+        <p>A curated breakdown of core science domains and theoretical methodologies undertaken during my 300-level undergraduate window.</p>
+        
+        <div class="course-grid">
+            <div class="course-card">
+                <div class="course-code">CSC 301</div>
+                <div class="course-title">Application of Development Tools</div>
+                <p style="font-size: 0.9rem; margin-bottom: 0;">Familiarization with modern workflows, environment control setups, and software development pipelines.</p>
+            </div>
+            <div class="course-card">
+                <div class="course-code">CSC 313</div>
+                <div class="course-title">Data Structures and Algorithms</div>
+                <p style="font-size: 0.9rem; margin-bottom: 0;">Analysis of complexity primitives, optimization matrices, spatial tracking structures, and efficiency loops.</p>
+            </div>
+            <div class="course-card">
+                <div class="course-code">CSC 335</div>
+                <div class="course-title">System Analysis and Design</div>
+                <p style="font-size: 0.9rem; margin-bottom: 0;">Evaluation of corporate architectural maps, design blueprints, modular paradigms, and deployment logic.</p>
+            </div>
+            <div class="course-card">
+                <div class="course-code">MAT 352</div>
+                <div class="course-title">Mathematical Methods</div>
+                <p style="font-size: 0.9rem; margin-bottom: 0;">Advanced numerical calculation algorithms, system profiling matrices, and spatial calculus calculations.</p>
+            </div>
+            <div class="course-card">
+                <div class="course-code">GES 103</div>
+                <div class="course-title">Nigerian Peoples and Culture</div>
+                <p style="font-size: 0.9rem; margin-bottom: 0;">Interdisciplinary historical exploration targeting socio-cultural structures within local target communities.</p>
+            </div>
+            <div class="course-card">
+                <div class="course-code">GES 301</div>
+                <div class="course-title">Entrepreneurial Skills</div>
+                <p style="font-size: 0.9rem; margin-bottom: 0;">Application of economic management principles to launch tech structures and digital startup initiatives.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

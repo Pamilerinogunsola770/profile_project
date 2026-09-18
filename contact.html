@@ -2,27 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Me - Pamilerin</title>
+    <title>Get In Touch | Victor.dev</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <a href="profile.html">Home/Profile</a>
-        <a href="courses.html">Courses</a>
+        <div class="nav-container">
+            <a href="profile.html" class="nav-brand">Victor<span>.dev</span></a>
+            <div class="nav-links">
+                <a href="profile.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+        </div>
     </nav>
     
-    <h1>Contact Form</h1>
-    <form action="#" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Enter your full name" required>
+    <div class="container">
+        <h2>Connect With Me</h2>
+        <p>Have an interesting project proposal, inquiry, or engineering opportunity? Drop a structured tracking diagnostic line down below.</p>
         
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Enter your email address" required>
-        
-        <label for="msg">Message:</label>
-        <textarea id="msg" rows="5" placeholder="Type your message here..." required></textarea>
-        
-        <button type="submit">Submit Form</button>
-    </form>
+        <div class="card">
+            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message tracking diagnostic dispatched successfully!');">
+                <div>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Ogunsola Pamilerin Victor" required>
+                </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="yourname@domain.com" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="6" placeholder="Write your project brief or inquiry details here..." required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
