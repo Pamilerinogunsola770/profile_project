@@ -4,78 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ogunsola Pamilerin Victor | Profile</title>
-    <style>
-        :root {
-            --ink: #182230;
-            --muted: #617083;
-            --accent: #0f766e;
-            --surface: #ffffff;
-            --background: #e8f1f0;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            min-height: 100vh;
-            font-family: "Segoe UI", Tahoma, sans-serif;
-            color: var(--ink);
-            background: linear-gradient(135deg, var(--background), #f8fafc);
-        }
-
-        header {
-            padding: 4rem 1.5rem 2rem;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: clamp(2rem, 5vw, 4rem);
-            letter-spacing: 0.02em;
-        }
-
-        .subtitle {
-            color: var(--muted);
-            font-size: 1.1rem;
-        }
-
-        main {
-            width: min(900px, calc(100% - 2rem));
-            margin: 0 auto 4rem;
-        }
-
-        .profile-card {
-            padding: 2rem;
-            background: var(--surface);
-            border: 1px solid #d5e1e0;
-            border-radius: 18px;
-            box-shadow: 0 18px 50px rgba(24, 34, 48, 0.1);
-        }
-
-        h2 {
-            color: var(--accent);
-        }
-
-        li {
-            margin: 0.6rem 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <h1>Ogunsola Pamilerin Victor</h1>
-        <p class="subtitle">Computer Science Student | 300 Level</p>
+        <nav aria-label="Main navigation">
+            <a href="profile.html">Profile</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
     </header>
 
     <main>
-        <section class="profile-card">
+        <section class="panel">
             <h2>Student Profile</h2>
             <p><strong>Matric Number:</strong> 243468</p>
             <p><strong>Department:</strong> Computer Science</p>
             <p><strong>Level:</strong> 300 Level</p>
+            <p>I am passionate about software development and building useful technologies that solve real-world problems.</p>
+        </section>
 
+        <section class="panel">
             <h2>Current Courses</h2>
             <ul>
                 <li>CSC 301</li>
